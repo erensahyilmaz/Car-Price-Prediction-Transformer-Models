@@ -38,35 +38,43 @@ Veri seti üzerinde yapılan analizler sonucunda çeşitli grafikler oluşturulm
 ### 1. Yakıt Tipi Dağılımı
 
 ![yakıt_tipi](https://github.com/user-attachments/assets/8bc41b79-f824-4ab2-890d-cb7b4b4cf9ba)
+
 Yakıt tiplerinin dağılımını gösteren pasta grafiği. En yaygın yakıt tipi **Benzin** olarak görülmektedir.
 
 ### 2. Vites Tipi Dağılımı
 ![vites](https://github.com/user-attachments/assets/99d6db14-2a7c-4def-b01a-837ac497f748)
+
 Vites tiplerinin dağılımını gösteren pasta grafiği. Veri setinde en çok temsil edilen vites tipi **Düz** vites olmuştur.
 
 ### 3. Araba Markaları
 ![marka-adet](https://github.com/user-attachments/assets/ac95ad1f-8eb4-4b62-a54e-1231ea645ab6)
+
 Araba markalarının dağılımını gösteren grafik. En yaygın marka **Renault** olurken, en az bulunan marka **Lada** olmuştur.
 
 ### 4. Kasa Tipleri
  ![kasa_tipi](https://github.com/user-attachments/assets/ad889046-2c49-42e7-ad59-11f8907540be)
+ 
 Araçların kasa tiplerinin dağılımını gösteren grafik. En fazla bulunan kasa tipi **Sedan** olurken, en az rastlanan kasa tipi **Coupe** olmuştur.
 
 ### 5. Renk Dağılımı
 ![renkler](https://github.com/user-attachments/assets/a6b14180-c355-419c-b6bd-8030fbd86d85)
+
 Araçların renklerinin dağılımını gösteren grafik. En çok bulunan araç rengi **Beyaz** olurken, en az bulunan renk **Pembe** olmuştur.
 
 
 ### 6. Marka-Fiyat Dağılımı
 ![marka-fiyat](https://github.com/user-attachments/assets/ba6ad975-df80-4d2d-b43a-d6b9463b0b31)
+
 Her bir markanın fiyatlarını gösteren boxplot grafiği. En yüksek fiyatlar **Porsche** markasında görülmektedir.
 
 ### 7. Marka-Fiyat-Vites Tipi Dağılımı
 ![marka-fiyat-vites](https://github.com/user-attachments/assets/eb73e0d0-1798-4d16-b4be-96855e3c9364)
+
 Marka ve vites tiplerine göre fiyatların dağılımını gösteren boxplot grafiği. Otomatik vitesli araçların fiyatları genellikle daha yüksektir.
 
 ### 8. Kasa-Vites-Fiyat Dağılımı
 ![kasatipi-fiyat](https://github.com/user-attachments/assets/443ceeb3-dad9-4ab0-9e40-46968c54e6e5)
+
 Her bir kasa tipine ait araçların viteslere göre dağılımı yer verilmiştir. En yüksek fiyatlı araçlar **Otomatik** vitesli araçlar olmuştur.
 
 
