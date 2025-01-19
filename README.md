@@ -1,7 +1,7 @@
 # Car-Price-Prediction-Transformer-Models
 # İkinci El Araç Fiyat Tahmini: Zaman Serisi Tabanlı Transformatör Yaklaşımları
 
-Bu proje, Türkiye'nin önde gelen ikinci el araç platformu **arabam.com**'dan elde edilen veriler üzerinden, ileri düzey bir fiyat tahmin sistemi geliştirmeyi amaçlamaktadır. Proje, geleneksel yöntemlerin ötesine geçerek, doğal dil işleme alanında devrim yaratan **transformatör modellerini** kullanmaktadır. Araçların kilometresi, yaşı, markası, modeli, motor özellikleri, yakıt tüketimi gibi birçok faktör analiz edilerek, ikinci el araç fiyatlarını etkileyen tüm unsurlar değerlendirilmiştir.
+Bu proje, bir ikinci el araç platformundan elde edilen veriler üzerinden, ileri düzey bir fiyat tahmin sistemi geliştirmeyi amaçlamaktadır. Proje, geleneksel yöntemlerin ötesine geçerek, doğal dil işleme alanında devrim yaratan **transformatör modellerini** kullanmaktadır. Araçların kilometresi, yaşı, markası, modeli, motor özellikleri, yakıt tüketimi gibi birçok faktör analiz edilerek, ikinci el araç fiyatlarını etkileyen tüm unsurlar değerlendirilmiştir.
 
 ## Proje Amacı
 
@@ -31,6 +31,44 @@ Veri seti, **arabam.com** üzerinden toplanan ikinci el araç ilanlarından olu�
 - Renk
 - Kasa Tipi
 - Fiyat
+- ## Veri Görselleştirme
+
+Veri seti üzerinde yapılan analizler sonucunda çeşitli grafikler oluşturulmuştur. Bu grafikler, veri setindeki trendleri ve ilişkileri anlamak için kullanılmıştır.
+
+### 1. Yakıt Tipi Dağılımı
+
+![yakıt_tipi](https://github.com/user-attachments/assets/8bc41b79-f824-4ab2-890d-cb7b4b4cf9ba)
+Yakıt tiplerinin dağılımını gösteren pasta grafiği. En yaygın yakıt tipi **Benzin** olarak görülmektedir.
+
+### 2. Vites Tipi Dağılımı
+![vites](https://github.com/user-attachments/assets/99d6db14-2a7c-4def-b01a-837ac497f748)
+Vites tiplerinin dağılımını gösteren pasta grafiği. Veri setinde en çok temsil edilen vites tipi **Düz** vites olmuştur.
+
+### 3. Araba Markaları
+![marka-adet](https://github.com/user-attachments/assets/ac95ad1f-8eb4-4b62-a54e-1231ea645ab6)
+Araba markalarının dağılımını gösteren grafik. En yaygın marka **Renault** olurken, en az bulunan marka **Lada** olmuştur.
+
+### 4. Kasa Tipleri
+ ![kasa_tipi](https://github.com/user-attachments/assets/ad889046-2c49-42e7-ad59-11f8907540be)
+Araçların kasa tiplerinin dağılımını gösteren grafik. En fazla bulunan kasa tipi **Sedan** olurken, en az rastlanan kasa tipi **Coupe** olmuştur.
+
+### 5. Renk Dağılımı
+![renkler](https://github.com/user-attachments/assets/a6b14180-c355-419c-b6bd-8030fbd86d85)
+Araçların renklerinin dağılımını gösteren grafik. En çok bulunan araç rengi **Beyaz** olurken, en az bulunan renk **Pembe** olmuştur.
+
+
+### 6. Marka-Fiyat Dağılımı
+![marka-fiyat](https://github.com/user-attachments/assets/ba6ad975-df80-4d2d-b43a-d6b9463b0b31)
+Her bir markanın fiyatlarını gösteren boxplot grafiği. En yüksek fiyatlar **Porsche** markasında görülmektedir.
+
+### 7. Marka-Fiyat-Vites Tipi Dağılımı
+![marka-fiyat-vites](https://github.com/user-attachments/assets/eb73e0d0-1798-4d16-b4be-96855e3c9364)
+Marka ve vites tiplerine göre fiyatların dağılımını gösteren boxplot grafiği. Otomatik vitesli araçların fiyatları genellikle daha yüksektir.
+
+### 8. Kasa-Vites-Fiyat Dağılımı
+![kasatipi-fiyat](https://github.com/user-attachments/assets/443ceeb3-dad9-4ab0-9e40-46968c54e6e5)
+Her bir kasa tipine ait araçların viteslere göre dağılımı yer verilmiştir. En yüksek fiyatlı araçlar **Otomatik** vitesli araçlar olmuştur.
+
 
 ## Model Performansı
 
@@ -50,10 +88,17 @@ Proje kapsamında test edilen modeller arasında en iyi performansı **FTTransfo
 
 En iyi performansı gösteren **FTTransformer** modeli, %93.7 R² skoru ile ikinci el araç fiyat tahmininde oldukça başarılı sonuçlar vermiştir. Model, yüksek fiyatlı araçlarda biraz daha yüksek hata payı gösterse de, genel olarak başarılı bir tahmin performansı sergilemiştir.
 
-## Kurulum
+![fttransformer-epochloss](https://github.com/user-attachments/assets/2198b484-1d57-4fc7-856d-70852dbac9f5)
 
-Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
+### FTTransformer Epoch Size Loss Grafiği
 
-1. **Gereksinimler:** Projeyi çalıştırmak için gerekli kütüphaneleri yükleyin:
-   ```bash
-   pip install -r requirements.txt
+Yukarıda FTTransformer modeline ait epoch size loss grafiğine yer verilmiştir.
+
+![ftt-scatter1](https://github.com/user-attachments/assets/d9d85262-fc1b-477e-81fa-fb09ca5ab632)
+
+### FTTransformer Scatter Grafiği
+
+FTTransformer'a ait grafikte gerçek veriler ile tahmin verileri nokta grafiği ile yer verilmiştir. Linear bir çizgi beklenmektedir.
+
+
+
