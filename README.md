@@ -22,16 +22,23 @@ Veri seti, **arabam.com** üzerinden toplanan ikinci el araç ilanlarından olu�
 
 - Marka
 - Model
+- Seri
 - Yıl
 - Kilometre
 - Yakıt Tipi
 - Vites Tipi
-- Motor Gücü
-- Motor Hacmi
-- Renk
 - Kasa Tipi
+- Renk
+- Motor Hacmi
+- Motor Gücü
+- Çekiş
+- Ortalama Yakıt Tüketimi
+- Yakıt Deposu
 - Fiyat
-- ## Veri Görselleştirme
+
+
+
+## Veri Görselleştirme
 
 Veri seti üzerinde yapılan analizler sonucunda çeşitli grafikler oluşturulmuştur. Bu grafikler, veri setindeki trendleri ve ilişkileri anlamak için kullanılmıştır.
 
