@@ -18,7 +18,7 @@ Bu projenin temel amacı, ikinci el araç piyasasındaki dinamikleri öğrenerek
 
 ## Veri Seti
 
-Veri seti, **arabam.com** üzerinden toplanan ikinci el araç ilanlarından oluşmaktadır. Her bir araç için aşağıdaki özellikler toplanmıştır:
+Veri seti, bir online satış sitesi üzerinden toplanan ikinci el araç ilanlarından oluşmaktadır. Her bir araç için aşağıdaki özellikler toplanmıştır:
 
 - Marka
 - Model
