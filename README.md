@@ -9,7 +9,7 @@ Bu projenin temel amacı, ikinci el araç piyasasındaki dinamikleri öğrenerek
 
 ## Kullanılan Teknolojiler
 
-- **Veri Toplama:** Python ve BeautifulSoup kütüphanesi kullanılarak **arabam.com** üzerinden veri toplanmıştır.
+- **Veri Toplama:** Python ve BeautifulSoup kütüphanesi kullanılarak bir online satış sitesi üzerinden veri toplanmıştır.
 - **Veri Ön İşleme:** Pandas kütüphanesi ile veri temizleme, eksik veri doldurma ve kategorik verilerin numerik hale getirilmesi işlemleri gerçekleştirilmiştir.
 - **Modeller:** 
   - **Klasik Modeller:** Doğrusal Regresyon, Ridge Regresyonu, Lasso Regresyonu, Rastgele Orman Regresyonu, XGBoost.
